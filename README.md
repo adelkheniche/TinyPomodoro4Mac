@@ -11,10 +11,26 @@
 
 ## Installation
 
-1. **Download**: Clone the repository or download the latest release from the [Releases Page](https://github.com/USERNAME/TinyPomodoro4Mac/releases).
+1. **Clone the Repository**: Clone the repository to your local machine:
 
-2. **Run**: Double-click the `.app` file to launch the application. This is the Apple Silicon version; you should compile your own if you need an Intel-compatible version. 
+   ```bash
+   git clone https://github.com/USERNAME/TinyPomodoro4Mac.git
+   cd TinyPomodoro4Mac
+   ```
 
+2. **Install Dependencies**: Ensure you have Python 3 and `py2app` installed:
+
+   ```bash
+   pip3 install py2app
+   ```
+
+3. **Compile the App**: Use the provided `setup.py` to build the macOS application:
+
+   ```bash
+   python3 setup.py py2app
+   ```
+
+4. **Run**: The compiled `.app` will be available in the `dist` folder. Move it to your Applications folder for easier access. This is the Apple Silicon version; if you need an Intel-compatible version, ensure you're using the correct Python environment.
 3. **Add to Applications** (Optional): Drag and drop the app into your macOS `Applications` folder for easier access.
 
 ## How to Use
